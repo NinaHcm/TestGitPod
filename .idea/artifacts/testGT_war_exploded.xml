@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="testGT:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/testGT_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="testGT/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="testGT" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="testGT/gwt/GWT" />
+    </root>
+  </artifact>
+</component>

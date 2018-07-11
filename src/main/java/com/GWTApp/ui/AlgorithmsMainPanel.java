@@ -16,10 +16,11 @@ public class AlgorithmsMainPanel implements IsWidget {
      */
     public AlgorithmsMainPanel() {
         AlgorithmsToolBar toolBar = new AlgorithmsToolBar();
-
+        AlgorithmsContent mainPanel = new AlgorithmsContent();
         body = new MaterialContainer();
         body.add(toolBar);
-        body.add(new AlgorithmsNavPushMenu());
+        body.add(new AlgorithmsNavPushMenu(mainPanel));
+        body.add(mainPanel);
     }
 
     @Override

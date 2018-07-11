@@ -1,5 +1,6 @@
 package com.GWTApp.ui;
 
+import com.GWTApp.ui.input.ThemeInput;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.client.ui.MaterialNavBar;
@@ -22,7 +23,8 @@ public class AlgorithmsToolBar implements IsWidget {
         brand.setPaddingLeft(60);
         navBar.setActivates("menuOpen");
         navBar.add(brand);
-
+        navBar.add(new ThemeInput());
+        ThemeManager.register(navBar, ThemeManager.LIGHTER_SHADE);
     }
 
     @Override
